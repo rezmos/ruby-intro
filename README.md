@@ -12,9 +12,9 @@ cada vez que acabes un reto crea un commit y actualiza el repo con la solucion.
 
 Abrelo en tu editor de texto y empieza a trabajar en los retos en el siguiente order:
 
-- [Defining Variables #1](./challenges/1-defining-variables)
-- [Simple String Methods](./challenges/2-simple-string-methods)
-- [Local Variables and Basic Arithmetical Operations](./challenges/3-local-variables)
+- [Definiendo Variables](./challenges/1-defining-variables)
+- [Metodos de Strings](./challenges/2-simple-string-methods)
+- [Operaciones matematicas](./challenges/3-local-variables)
 - [Definiendo metodos](./challenges/4-defining-methods)
 - [Formateando direccion](./challenges/5-format-address)
 - [Metodos de Matematicas](./challenges/6-math-methods)
