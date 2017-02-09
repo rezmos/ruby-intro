@@ -33,7 +33,7 @@ Escribe `rspec` seguido del nombre del archivo.
 
 ```ruby
 
-$ 1-defining-variables [master] :> rspec my_solution.rb
+$ <nombre-del-archivo> [master] :> rspec my_solution.rb
 
 ```
 

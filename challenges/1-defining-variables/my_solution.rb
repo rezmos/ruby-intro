@@ -2,6 +2,9 @@
 
 # Tu solucion abajo
 
+first_name = 'Juan'
+last_name = 'fdsaf'
+age = 2
 
 # Pruebas NO LAS BORRES
 
