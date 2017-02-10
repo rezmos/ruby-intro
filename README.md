@@ -29,7 +29,7 @@ Abrelo en tu editor de texto y empieza a trabajar en los retos en el siguiente o
 - [Año Bisiesto](./challenges/10-leap-years)
 - [Substrings](./challenges/11-simple-substrings)
 
-## Arrays, iteradors y Hashes
+## Arrays, iterators y Hashes
 - [Numero pequeño](./challenges/12-smallest-integer)
 - [Numero Grande](./challenges/13-largest-integer)
 - [String corta](./challenges/14-shortest-string)
