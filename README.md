@@ -10,7 +10,7 @@ $ cd ruby-intro
 
 cada vez que acabes un reto crea un commit y actualiza el repo con la solucion.
 
-Abrelo en tu editor de texto y empieza a trabajar en los retos en el siguiente order:
+Abrelo en tu editor de texto y empieza a trabajar en los retos en el siguiente orden:
 
 ## Numeros, letras y asignacion de variables
 - [Definiendo Variables](./challenges/1-defining-variables)
