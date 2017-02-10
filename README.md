@@ -26,7 +26,7 @@ Abrelo en tu editor de texto y empieza a trabajar en los retos en el siguiente o
 - [Adivina](./challenges/7-good-guess)
 - [Calcula la nota](./challenges/8-calculate-grade)
 - [Lados Triangulo](./challenges/9-triangle-side)
-- [Año Bisiesto](./challenges/10-leap-year)
+- [Año Bisiesto](./challenges/10-leap-years)
 - [Substrings](./challenges/11-simple-substrings)
 
 ## Arrays, iteradors y Hashes
