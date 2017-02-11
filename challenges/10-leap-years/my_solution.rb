@@ -1,11 +1,39 @@
 # Leap Years
 
-# Tu solucion abajo:
+# # Tu solucion abajo:
+# condition = true
+
+# unless !condition
+#   p "algo"
+# end
+
+# p 'blahah' if condition
+
+
+# if condition
+#   p 'Blahah'
+# end
+
+
+# if condition
+#   p 'if'
+# else
+#   p 'else'
+# end
+
+# condition ?  p 'if' : p 'else'
+# def leap_year?(year)
+#   if year % 4 == 0 || year % 400 == 0
+#     return true unless year % 100 == 0 && year % 400 != 0
+#     false
+#   else
+#     false
+#   end
+# end
 
 def leap_year?(year)
-  if year % 4 == 0 || year % 400 == 0
-    return true unless year % 100 == 0 && year % 400 != 0
-    false
+  if year % 4 == 0 && year / 100 != 0 || year % 400 == 0
+    true
   else
     false
   end

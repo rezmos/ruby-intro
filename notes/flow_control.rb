@@ -42,16 +42,49 @@ str = nil
 #   puts 'nada de lo anterior se cumple'
 # end
 
-true && !(false || true)
-true && !(true)
-true && false
-false
 
 if 3 != 4 && !("pedro" == "juan" || 26 > 10)
   puts 'Dentro del if'
 end
+# true && !(false || true)
+# true && !(true)
+# true && false
+# false
 
 
+customer_would_like_coffee? = true
+
+puts "Preparar cafe" if customer_would_like_coffee?
+puts "Naranjas" unless customer_would_like_coffee?
+
+customer_would_like_coffee? ? puts "Preparar cafe" : puts "Naranjas"
+
+
+hour = 15
+
+
+
+case average
+when hour < 12
+    puts "Good Morning"
+when hour > 12 && hour < 17
+    puts "Good Afternoon"
+else
+    puts "Good Evening"
+end
+
+message = if
+    when hour < 12
+        "Good Morning"
+    when hour > 12 && hour < 17
+        "Good Afternoon"
+    else
+        "Good Evening"
+    end
+
+#statements #expresions
+
+puts message
 
 
 
