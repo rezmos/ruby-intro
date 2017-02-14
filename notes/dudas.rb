@@ -1,8 +1,15 @@
 
+# Pseudocode
+
+1. input un arreglo de numeros
+2. iterar sobre el arreglo
+3. crear un variable  voy a ir guardando el mas pen
+3. en cada iteracion comparar el elemento con
+
 #Definicion
 def find_minimun(array)
   return nil if array.length == 0
-  count = 0
+  count = array.first
   array.each.with_index do |n, index|
     if index == 0
       count = n
@@ -17,6 +24,7 @@ end
 
 def find_minimun(arr)
   return nil if arr.length == 0
+  count = array.first
   arr.each do |n|
     if n < count
       count = n
@@ -25,6 +33,9 @@ def find_minimun(arr)
   count
 end
 
+rangos[:temperature] = temperature
+rangos[:altitude] = altitude
+rangos[:pressure] = pressure
 
 # Invocar (Usar el metodo)
 

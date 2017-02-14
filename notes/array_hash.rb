@@ -1,3 +1,124 @@
+person = {
+  name: 'juan',
+  'name': 'juan',
+  name: => 'juan',
+  'name3' => 'juan',
+  0: 'faksd',
+  0 => ,
+  name3: 'juan',
+  name6: {name6: 'fasd'}
+}
+
+persons = {
+  name: {name2: 'juan'}
+}
+
+students = {
+  diana: {
+    name: 'diana',
+    age: 243,
+    favorite_food: [
+      'sushi',
+      'pasta'
+    ],
+    mentor_id: 0
+  },
+  nicolas: {
+    name: 'nicolas',
+    age: 342,
+    favorite_food: [
+      'pizza',
+      'ajiaco'
+    ],
+    mentor_id: 3
+  }
+}
+
+
+make_it = {
+  mentors: [{id: 1, name: 'juan', age: 56}, {id: 0, name: 'german', age: 432}, ],
+  students: students
+}
+
+
+make_it[:students].map do |key, value|
+  if value[:mentor_id] == make_it[:mentors][0][:id]
+    p "El mentor de #{value[:name]} es #{make_it[:mentors][0][:name]}"
+  else
+    p "El mentor de #{value[:name]} es #{make_it[:mentors][1][:name]}"
+  end
+end
+
+
+mentors  =  make_it[:mentors];
+students =  make_it[:students];
+
+students.each do |student , info_student|
+  mentors.each do |mentor|
+    if info_student[:mentor_id]== mentor[:id]
+      p "el mentor de #{info_student[:name]} es #{mentor[:name]}  y comida favorita"
+    end
+  end
+end
+
+make_it[:students].each do |student, info|
+  p "el mentor de #{info[:name]} es: #{make_it[:mentors][info[:mentor_id]][:name]}"
+end
+
+# make_it[:students].each do |key, value|
+#   mentor_id = value[:mentor_id]
+#   mentor = make_it[:mentors][mentor_id][:name]
+#   p "El mentor de #{key} es #{mentor}"
+# end
+
+make_it[:students].each do |key, value|
+  mentor = make_it[:mentors].select {|mentor| mentor[:id] == value[:mentor_id] }.first
+  p "Soy #{key} y mi mentor es #{mentor[:name]}, mi comida favorita es #{value[:favorite_food][0]}"
+end
+
+# students.each do |key, value|
+#   p value[:name]
+# end
+
+make_it.each do |key, value|
+  p value
+end
+
+
+
+
+
+
+products = [
+  { id: 1, name: "Leche", price: 120, categories: ["familiar", "comida"] },
+  { id: 2, name: "Arroz", price: 80, categories: ["familiar", "comida"] },
+  { id: 3, name: "Lavadora", price: 7800, categories: ["electrodomésticos"] }
+]
+
+
+products[0][:categories][1]
+
+sum = 0
+products.each do |product|
+  sum = product[:price] + sum
+end
+p sum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### ARRAYS #####
 
 name = 'juan'
@@ -50,6 +171,7 @@ end
 
 
 ##### HASHES ####
+
 cities = {
   'CA' => 'San Francisco',
   'MI' => 'Detroit',
@@ -65,7 +187,7 @@ cities = {
 cities = {
   CA: 'San Francisco',
   MI: 'Detroit',
-  FL: 'Jacksonville'
+  FL: 'Jacksonville',
 }
 
 cities['NY'] = 'New York'
@@ -73,8 +195,8 @@ cities['OR'] = 'Portland'
 
 
 puts '-' * 10
-cities.each do |abbrev, city|
-  puts "#{abbrev} has the city #{city}"
+cities.each do |key, value|
+  puts "#{key} has the city #{value}"
 end
 
 puts '-' * 10
