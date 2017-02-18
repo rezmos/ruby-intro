@@ -141,27 +141,18 @@ number_array = [5, [10, 15], [20,25,30], 35]
 
 
 
+
+
 # Crea un metodo que reciva un array como argumento, en este caso el array startup_names, y devuelva un array igual pero en donde a cada nombre se le a añadido 'ly' al final.
 
 startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 
+def ilyfy(array)
+  if array[0].kind_of?(String)
 
-
-
-
- a = ['hola', 'como', 'estas', 'como']
-
-
-
-a.each.with_index do |item, i|
-  'como'
-  a.each.with_index do |secondItem, y|
-    item = 'como'
-    secondItem  = 'como'
-    i = 1
-    y = 3
-    item == secondItem
-  end
+  array[0] = array.first + 'ly'
+  ilyfy(array[1..-1])
 end
+
 
 
