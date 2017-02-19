@@ -2,9 +2,9 @@
 
 # Tu solucion abajo:
 
-old_string = "Ruby is cool"
-new_string = old_string.upcase.reverse
+old_string = "RUBY is cool"
 
+new_string = (old_string. upcase).reverse
 # Pruebas NO LAS BORRES
 
 
@@ -13,8 +13,8 @@ describe "old_string" do
     expect(defined?(old_string)).to eq 'local-variable'
   end
 
-  it "has the value 'Ruby is cool'" do
-    expect(old_string).to eq "Ruby is cool"
+  it "has the value 'RUBY is cool'" do
+    expect(old_string).to eq "RUBY is cool"
   end
 end
 
