@@ -2,13 +2,9 @@
 
 # Tu solucion abajo
 
-first_name = 'Juan'
-last_name = 'fdsaf'
-age = 2
-
-name = "Germán"
-name = gets.chomp
-puts "Hola #{name}"
+first_name = "Claudia Marcela"
+last_name = "ALvarez Ramos"
+age = 33
 
 # Pruebas NO LAS BORRES
 
