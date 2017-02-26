@@ -1,11 +1,10 @@
 # Good Guess
 
-# Tu solucion abajo:
-
-def good_guess?(a)
-  if a == 42
-    true
+# Tu solucion abajo:(
+def good_guess?(number)
+  if  ( number == 42 )
+    return true
   else
-    false
+    return false
   end
 end
