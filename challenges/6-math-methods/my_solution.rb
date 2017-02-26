@@ -1,11 +1,15 @@
 # Math Methods
 
 # Tu solucion abajo:
-
-def add(a,b)
-  a + b
+def add(op1, op2)
+  op1 + op2
 end
-
-def modulus(a,b)
-  a % b
+def subtract(op1, op2)
+  op1 - op2
+end
+def multiply(op1, op2)
+  op1 * op2
+end
+def divide(op1, op2)
+  op1.to_f / op2
 end
