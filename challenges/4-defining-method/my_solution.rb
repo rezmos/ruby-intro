@@ -1,10 +1,2 @@
-# Define an Empty Method
-
-
-
-
-# Tu solucion abajo:
-
-def do_something(a,b,c) #arity, signature
-
+def do_something(uno, dos, tres)
 end
