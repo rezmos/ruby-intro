@@ -1,39 +1,17 @@
 # Triangle Side
 
 # Tu solucion abajo:
-
-
-def valid_triangle?(x,y,z)
-  if x <= 0 && y <= 0 && z <= 0
-    false
-  elsif (x + y) <= z || (x + z) <= y || (y + z) <= x
-    false
-  else
-    true
+def valid_triangle?(param1, param2, param3)
+   if(param1>0 && param2>0 && param3>0)
+     return true;
+   else
+     return false;
   end
-end
-
-
-def valid_triangle?(a, b, c)
-  if (a+b>c) && (a+c>b) && (b+c>a)
-    true
+  # equilatero
+  if(((param1 + param2 )> param3)&&((param1 + param3)>param2)&&(param2+param3)>param1)
+    return true;
   else
-    false
+    return false;
   end
+
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
